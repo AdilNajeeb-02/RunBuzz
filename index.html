@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Other Possibility</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>The Other Possibility</h1>
+
+        <p class="subtitle">
+            Because your brain can't leave a decision alone.
+        </p>
+
+
+        <!-- QUESTION -->
+
+        <div id="questionScreen" class="screen">
+
+            <p class="small-text">
+                MAKE A DECISION
+            </p>
+
+            <h2 id="question">
+                What should you do?
+            </h2>
+
+
+            <div class="choices">
+
+                <button id="choice1" onclick="makeChoice(0)">
+                    Option 1
+                </button>
+
+
+                <button id="choice2" onclick="makeChoice(1)">
+                    Option 2
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- YOUR TIMELINE -->
+
+        <div id="resultScreen" class="screen hidden">
+
+            <p class="small-text">
+                YOUR TIMELINE
+            </p>
+
+            <h2 id="yourChoice"></h2>
+
+            <p id="yourStory"></p>
+
+
+            <button class="other-button"
+                    onclick="showOtherPossibility()">
+
+                BUT WHAT IF...? 👀
+
+            </button>
+
+        </div>
+
+
+
+        <!-- ALTERNATE TIMELINE -->
+
+        <div id="otherScreen" class="screen hidden">
+
+            <p class="small-text">
+                ALTERNATE TIMELINE DETECTED
+            </p>
+
+            <h2 id="otherChoice"></h2>
+
+            <p id="otherStory"></p>
+
+
+            <!-- REGRET -->
+
+            <div class="regret-box">
+
+                <p>
+                    REGRET LEVEL
+                </p>
+
+
+                <div class="progress">
+
+                    <div id="regretBar"></div>
+
+                </div>
+
+
+                <h3 id="regretText">
+                    0% regret
+                </h3>
+
+            </div>
+
+
+            <p class="final-message">
+
+                This is completely unscientific.
+                But somehow... you regret it.
+
+            </p>
+
+
+            <button class="restart"
+                    onclick="restart()">
+
+                Make Another Bad Decision
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

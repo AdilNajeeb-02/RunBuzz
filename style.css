@@ -1,0 +1,327 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #111;
+
+    color: white;
+
+    padding: 20px;
+
+}
+
+
+.container {
+
+    width: 100%;
+
+    max-width: 750px;
+
+    text-align: center;
+
+}
+
+
+h1 {
+
+    font-size: 52px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.subtitle {
+
+    color: #999;
+
+    margin-bottom: 40px;
+
+    font-size: 17px;
+
+}
+
+
+.screen {
+
+    background: #1d1d1d;
+
+    border-radius: 24px;
+
+    padding: 50px 35px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,0.5);
+
+    animation: appear 0.5s ease;
+
+}
+
+
+.small-text {
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #777;
+
+    margin-bottom: 20px;
+
+}
+
+
+h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.choices {
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+}
+
+
+.choices button {
+
+    width: 220px;
+
+    padding: 20px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: white;
+
+    color: black;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+
+.choices button:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(255,255,255,0.15);
+
+}
+
+
+.other-button,
+.restart {
+
+    border: none;
+
+    padding: 16px 28px;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    background: #444;
+
+    color: white;
+
+    margin-top: 25px;
+
+    transition: 0.25s;
+
+}
+
+
+.other-button:hover {
+
+    background: #555;
+
+    transform: scale(1.05);
+
+}
+
+
+.restart {
+
+    background: white;
+
+    color: black;
+
+}
+
+
+.restart:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+#yourStory,
+#otherStory {
+
+    color: #ccc;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    max-width: 600px;
+
+    margin: auto;
+
+}
+
+
+.regret-box {
+
+    margin-top: 35px;
+
+}
+
+
+.regret-box p {
+
+    color: #888;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.progress {
+
+    width: 100%;
+
+    height: 20px;
+
+    background: #333;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin: 15px 0;
+
+}
+
+
+#regretBar {
+
+    height: 100%;
+
+    width: 0%;
+
+    background: white;
+
+    transition: width 1.5s ease;
+
+}
+
+
+#regretText {
+
+    font-size: 25px;
+
+}
+
+
+.final-message {
+
+    color: #777;
+
+    margin-top: 30px;
+
+    font-style: italic;
+
+}
+
+
+.hidden {
+
+    display: none;
+
+}
+
+
+@keyframes appear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .choices {
+
+        flex-direction: column;
+
+    }
+
+
+    .choices button {
+
+        width: 100%;
+
+    }
+
+}
