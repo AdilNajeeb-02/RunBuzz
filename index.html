@@ -1,1 +1,188 @@
+<!DOCTYPE html>
 
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>The Other Possibility</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <div class="badge">
+            COMPLETELY USELESS TECHNOLOGY
+        </div>
+
+        <h1>
+            The Other Possibility
+        </h1>
+
+        <p>
+            Because your brain can't leave a decision alone.
+        </p>
+
+    </header>
+
+
+    <section id="inputScreen" class="card">
+
+        <div class="label">
+            WHAT ARE YOU OVERTHINKING?
+        </div>
+
+        <h2>
+            Enter a decision you've already made.
+        </h2>
+
+        <textarea
+            id="decisionInput"
+            placeholder="Example: Should I have gone to the beach today?"
+        ></textarea>
+
+        <button
+            id="generateButton"
+            onclick="generateTimeline()">
+
+            OVERTHINK IT 🧠
+
+        </button>
+
+        <p class="example">
+            Try:
+            "Should I have ordered pizza instead?"
+        </p>
+
+    </section>
+
+
+    <section id="loadingScreen" class="card hidden">
+
+        <div class="loader">
+            🧠
+        </div>
+
+        <h2>
+            Analyzing your completely unnecessary decision...
+        </h2>
+
+        <p id="loadingText">
+            Searching alternate realities...
+        </p>
+
+    </section>
+
+
+    <section id="resultScreen" class="hidden">
+
+        <div class="timeline-container">
+
+            <div class="timeline your">
+
+                <div class="label">
+                    YOUR TIMELINE
+                </div>
+
+                <h2 id="decisionTitle">
+                    Your decision
+                </h2>
+
+                <div id="yourTimeline"
+                     class="events">
+                </div>
+
+            </div>
+
+
+            <div class="vs">
+                VS
+            </div>
+
+
+            <div class="timeline alternate">
+
+                <div class="label">
+                    THE OTHER POSSIBILITY
+                </div>
+
+                <h2>
+                    What if...?
+                </h2>
+
+                <div id="otherTimeline"
+                     class="events">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="regret card">
+
+            <div class="label">
+                UNNECESSARY REGRET ANALYSIS
+            </div>
+
+            <div class="regret-number">
+
+                <span id="regretScore">
+                    0
+                </span>%
+
+            </div>
+
+            <div class="progress">
+
+                <div id="regretBar"></div>
+
+            </div>
+
+            <p id="conclusion"></p>
+
+        </div>
+
+
+        <div class="actions">
+
+            <button
+                onclick="goDeeper()"
+                class="primary">
+
+                GO DEEPER 👀
+
+            </button>
+
+
+            <button
+                onclick="startAgain()"
+                class="secondary">
+
+                MAKE ANOTHER BAD DECISION
+
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
