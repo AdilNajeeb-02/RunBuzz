@@ -41,7 +41,6 @@ NO installation required
 
 ### Project Documentation
 For Software:
-![Uploading hackathon sc .png…]()
 The Other Possibility is a software-only interactive web application that explores
 the "what if I had chosen the other option?" concept through humorous alternate
 outcomes
