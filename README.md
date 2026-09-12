@@ -80,6 +80,8 @@ https://github.com/user-attachments/assets/bbd5488a-88e0-4988-957b-a1ab2118fcb2
 
 The video demonstrates the complete working of The Other Possibility, including making a choice, processing the selected option, and displaying a humorous alternate outcome
 
+#additional demos
+https://run-buzz-ec5s.vercel.app/
 
 ## Team Contributions
 - Adil Najeeb: Project development, frontend implementation, JavaScript logic and testing.
